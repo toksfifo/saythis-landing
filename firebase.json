@@ -1,0 +1,9 @@
+{
+  "firebase": "saythis-landing",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
