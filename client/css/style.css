@@ -19,6 +19,11 @@
   min-height: 480px;
   background-color: #93cceb;
 }
+@media (max-height: 480px) {
+  .splash {
+    height: 480px;
+  }
+}
 .splash-content {
   width: 100%;
   height: 320px;
@@ -27,7 +32,7 @@
 .splash-footer {
   width: 100%;
   height: 80px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   position: absolute;
   bottom: 0px;
 }
@@ -35,11 +40,17 @@
   width: 100%;
   position: absolute;
   top: 100%;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+}
+@media (max-height: 480px) {
+  .sectionWrapper {
+    top: 480px;
+  }
 }
 .section {
   width: 80%;
   height: 480px;
+  /*background-color: @color-stBlue;*/
   border: 1px solid red;
 }
 .test {
@@ -47,11 +58,19 @@
   height: 100px;
   width: 100px;
   position: absolute;
-  top: 0px;
+  top: 190px;
   right: 0px;
 }
+.test.is-fixed {
+  position: fixed;
+  top: 190px;
+}
+.test.is-bottom {
+  position: absolute;
+  top: 1150px;
+}
 .navbar {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   position: absolute;
   top: 0px;
   left: 0px;
