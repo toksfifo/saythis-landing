@@ -15,9 +15,16 @@
 </div>
 
 <div class="sectionWrapper">
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="section"></div>
-	<div class="test" ng-class="{'is-fixed': fixed, 'is-bottom': bottom}" scroll></div>
-	<div class="section"></div>
+	<div class="section">A</div>
+	<div class="section">B</div>
+	<div class="section">C</div>
+	<div class="section" style="width: 100%">D</div>
+
+	<div class="phoneWrapper" ng-class="{'is-fixed': fixed, 'is-bottom': bottom}" scroll>
+		<img src="client/img/phone_white_230.png" alt="Phone">
+		<div class="phone-image" style="background-color: rgb(255, 120, 120)" ng-show="show.red"></div>
+		<div class="phone-image" style="background-color: rgb(189, 236, 182)" ng-show="show.green"></div>
+		<div class="phone-image" style="background-color: rgb(253, 253, 150)" ng-show="show.yellow"></div>
+	</div>
+	
 </div>
