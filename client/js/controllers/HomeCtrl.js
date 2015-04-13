@@ -6,7 +6,8 @@ app.controller('HomeCtrl', ['$scope', function($scope) {
 		var splashContent = document.getElementsByClassName("splash-content")[0];
 		TweenLite.to(splashContent, 2, {
 			opacity: 1,
-			ease: Power2.easeInOut
+			ease: Power2.easeInOut,
+			delay: 0.5
 		});
 	}
 
