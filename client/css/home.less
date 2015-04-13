@@ -1,5 +1,6 @@
 @height-minMobile: 480px;
 @height-footer--splash: 80px;
+@height-videoButton: 100px;
 
 .splash {
 	position: absolute;
@@ -12,15 +13,18 @@
 	@media (max-height: 480px) {
 		height: 480px;
 	}
-
+	
+	color: @color-white;
 	background-color: @color-stBlue;
+
+	text-align: center;
 }
 
 .splash-content {
 	width: 100%;
 	height: @height-minMobile - 2*@height-footer--splash;
 
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 .splash-footer {
@@ -31,6 +35,32 @@
 
 	position: absolute;
 	bottom: 0px;
+}
+
+.splash-tagline {
+	font-size: 40px;
+	font-weight: 300;
+	margin-top: 36px;
+}
+
+.splash-video {
+	border: 2px solid @color-whiteTrans50;
+	border-radius: 50%;
+
+	width: @height-videoButton;
+	height: @height-videoButton;
+
+	margin-top: 36px;
+
+	background: url("../img/google/ic_play_arrow_white_48dp.png") center center / 48px 48px no-repeat;
+
+	&:hover {
+		border-color: @color-whiteTrans75;
+	}
+
+	&:active {
+		border-color: @color-white;
+	}
 }
 
 .sectionWrapper {

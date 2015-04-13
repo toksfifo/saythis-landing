@@ -8,17 +8,37 @@
 	left: 0px;
 
 	background-color: @color-stBlue;
+	color: @color-white;
 
 	width: 100%;
 	height: @height-navbar;
 	
 	z-index: @zIndex-1--navbar;
+
+	text-align: center;
+
+
 }
 
-.navbar-itemWrapper {
+/*.navbar-itemWrapper {
 	text-align: center;
-}
+	line-height: 16px;
+}*/
 
 .navbar-item {
 	/*display: inline-block;*/
+	font-size: 16px;
+	font-weight: 300;
+	line-height: @height-navbar;
+	padding: 0px 15px;
+	border-right: 1px solid @color-whiteTrans50;
+	&:last-child {
+		border-right: none;
+	}
+	&:hover {
+		color: @color-whiteTrans75;
+	}
+	&:active {
+		color: @color-whiteTrans50;
+	}
 }
