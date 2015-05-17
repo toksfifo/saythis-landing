@@ -16,7 +16,8 @@
     "url": "https://github.com/toksfifo/saythis-landing/issues"
   },
   "homepage": "https://github.com/toksfifo/saythis-landing",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-rename": "^1.2.2",
