@@ -1,1 +1,1 @@
-var app = angular.module('saythisApp', ['ngRoute']);
+var app = angular.module('saythisApp', ['ngRoute', 'ngAnimate']);
