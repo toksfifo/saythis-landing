@@ -32,19 +32,14 @@
   left: 0px;
   width: 100%;
   height: 100%;
-  min-height: 480px;
+  min-height: 430px;
   color: #ffffff;
   background-color: #93cceb;
   text-align: center;
 }
-@media (max-height: 480px) {
-  .splash {
-    height: 480px;
-  }
-}
 .splash-content {
-  width: 100%;
-  height: 360px;
+  width: 90%;
+  height: 310px;
   opacity: 0;
   /*border: 1px solid black;*/
 }
@@ -55,18 +50,21 @@
   position: absolute;
   bottom: 0px;
 }
+.splash-footer-img {
+  height: 50px;
+}
 .splash-tagline {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 300;
-  margin-top: 36px;
+  margin-top: 32px;
 }
 .splash-video {
   border: 2px solid;
   border-radius: 50%;
   color: #ffffff;
-  width: 100px;
-  height: 100px;
-  margin-top: 36px;
+  width: 80px;
+  height: 80px;
+  margin-top: 32px;
   font-size: 30px;
 }
 .splash-video:hover {
@@ -81,9 +79,9 @@
   top: 100%;
   /*border: 1px solid black;*/
 }
-@media (max-height: 480px) {
+@media (max-height: 430px) {
   .sectionWrapper {
-    top: 480px;
+    top: 430px;
   }
 }
 .section {
