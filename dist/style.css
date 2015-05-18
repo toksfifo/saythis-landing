@@ -12,8 +12,19 @@
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.u-centerXY {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 .u-pointer {
   cursor: pointer;
+}
+.u-floatLeft {
+  float: left;
 }
 .splash {
   position: absolute;
@@ -50,18 +61,19 @@
   margin-top: 36px;
 }
 .splash-video {
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid;
   border-radius: 50%;
+  color: #ffffff;
   width: 100px;
   height: 100px;
   margin-top: 36px;
-  background: url("../client/img/google/ic_play_arrow_white_48dp.png") center center / 48px 48px no-repeat;
+  font-size: 30px;
 }
 .splash-video:hover {
-  border-color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
 .splash-video:active {
-  border-color: #ffffff;
+  color: rgba(255, 255, 255, 0.5);
 }
 .sectionWrapper {
   width: 100%;

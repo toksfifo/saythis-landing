@@ -45,22 +45,26 @@
 }
 
 .splash-video {
-	border: 2px solid @color-whiteTrans50;
+	border: 2px solid;
 	border-radius: 50%;
+
+	color: @color-white;
 
 	width: @height-videoButton;
 	height: @height-videoButton;
 
 	margin-top: 36px;
 
-	background: url("../client/img/google/ic_play_arrow_white_48dp.png") center center / 48px 48px no-repeat;
+	font-size: 30px; // for fa play button inside
+
+	// background: url("../client/img/google/ic_play_arrow_white_48dp.png") center center / 48px 48px no-repeat;
 
 	&:hover {
-		border-color: @color-whiteTrans75;
+		color: @color-whiteTrans75;
 	}
 
 	&:active {
-		border-color: @color-white;
+		color: @color-whiteTrans50;
 	}
 }
 
