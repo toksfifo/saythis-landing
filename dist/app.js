@@ -1,13 +1,4 @@
 var app = angular.module('saythisApp', ['ngRoute', 'ngAnimate']);
-app.controller('HomeCtrl', ['$scope', function($scope) {
-
-	init();
-
-	function init() {
-		$scope.showHomeContent = true;
-	}
-
-}]);
 app.directive('scroll', ['$window', function($window) {
 	
 	return {
@@ -35,6 +26,15 @@ app.directive('scroll', ['$window', function($window) {
 
 		});
 
+	}
+
+}]);
+app.controller('HomeCtrl', ['$scope', function($scope) {
+
+	init();
+
+	function init() {
+		$scope.showHomeContent = true;
 	}
 
 }]);

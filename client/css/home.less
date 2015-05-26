@@ -1,6 +1,8 @@
 @height-minMobile: 430px;
 @height-footer--splash: 60px;
 @height-videoButton: 80px;
+@height-section-content-head: 50px;
+@height-section-content-body: 80px;
 
 .splash {
 	position: absolute;
@@ -72,6 +74,8 @@
 .sectionWrapper {
 	width: 100%;
 
+	text-align: center;
+
 	position: absolute;
 	top: 100%;
 	@media(max-height: @height-minMobile) {
@@ -82,30 +86,32 @@
 }
 
 .section {
-	width: 80%;
-	height: 480px;
+	width: 300px;
+
+	margin-top: 50px;
+
+	// height: 480px;
 
 	/*background-color: @color-stBlue;*/
 	border: 1px solid red;
 }
 
-.test {
-	background-color: black;
-
-	height: 100px;
-	width: 100px;
-
-	position: absolute;
-	top: 190px;
-	right: 0px;
+.section-content {
+	height: @height-section-content-head + @height-section-content-body;
 }
 
-.test.is-fixed {
-	position: fixed;
-	top: 190px;
+.section-content-head {
+	height: @height-section-content-head;
+
+	color: @color-stBlue;
+
+	font-size: 38px;
 }
 
-.test.is-bottom {
-	position: absolute;
-	top: 1150px;
+.section-content-body {
+	height: @height-section-content-body;
+}
+
+.section-img {
+	width: 240px;
 }
